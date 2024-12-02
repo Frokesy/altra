@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { GoogleIcon } from "../../svgs/Icons";
 
 const Login = () => {
@@ -5,9 +6,7 @@ const Login = () => {
     <div className="w-[35%] mt-10">
       <div className="space-y-3">
         <h2 className="text-[48px] font-semibold">Log In</h2>
-        <p className="text-[18px]">
-          Log in to your existing account.
-        </p>
+        <p className="text-[18px]">Log in to your existing account.</p>
 
         <div className="form space-y-6">
           <div className="text-[14px] space-y-2 mt-10">
@@ -37,7 +36,9 @@ const Login = () => {
             <GoogleIcon />
             <p>Sign Up wth Google</p>
           </button>
-          <p className="text-center underline">Forgot your password?</p>
+          <NavLink to="/forgot-password">
+            <p className="text-center underline mt-6">Forgot your password?</p>
+          </NavLink>
         </div>
       </div>
     </div>
