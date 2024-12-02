@@ -2,7 +2,7 @@ import { GoogleIcon } from "../../svgs/Icons";
 
 const Signup = () => {
   return (
-    <div className="w-[35%] mt-[20vh]">
+    <div className="w-[35%] mt-10">
       <div className="space-y-3">
         <h2 className="text-[48px] font-semibold">Sign Up</h2>
         <p className="text-[18px]">
