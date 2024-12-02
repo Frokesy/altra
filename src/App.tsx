@@ -1,9 +1,18 @@
+import SetupScreens from "./pages/setup";
+import { AnimatePresence } from "framer-motion";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 const App = () => {
+  const router = createBrowserRouter([
+    { path: "/", element: <SetupScreens /> },
+  ]);
   return (
     <>
-      <h2>Hello world</h2>
+      <AnimatePresence mode="wait">
+        <RouterProvider router={router} />;
+      </AnimatePresence>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
