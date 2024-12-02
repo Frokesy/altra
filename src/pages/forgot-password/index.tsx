@@ -1,3 +1,5 @@
+import Footer from "../../components/defaults/Footer";
+
 const ForgotPassword = () => {
   return (
     <div className="w-[90vw] mx-auto pt-10">
@@ -15,7 +17,7 @@ const ForgotPassword = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="Enter business name"
+                  placeholder="Enter code"
                   className="border border-[#ccc] p-3 outline-none w-[100%] rounded-lg"
                 />
               </div>
@@ -25,6 +27,7 @@ const ForgotPassword = () => {
             </div>
           </div>
         </div>
+      <Footer />
       </div>
     </div>
   );
